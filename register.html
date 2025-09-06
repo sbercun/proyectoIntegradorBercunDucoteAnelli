@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Register</title>
 </head>
 <body>
-    <section class="contenedor-form">
-        <h2>Registrate</h2>
-        <form action="login.html" method="get">
-            <div class="pregunta-form">
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="email" value="">
-            </div>
-            <div class="pregunta-form">
-                <label for="password">Contraseña:</label>
-                <input id="password" type="password" name="password" value="">
-            </div>
-            <div class="pregunta-form">
-                <label for="repetir">Repetir contraseña:</label>
-                <input id="repetir" type="password" name="repetir-contraseña" value="">
-            </div>
-            <div class="terminos-form">
-                <input id="terminos" type="checkbox" name="terminos" value="">
-                <label for="terminos">Acepto terminos y condiciones</label>
-            </div>
-            <button class="registrarme" type="submit" >Registrarme</button>
-            <a href="./login.html" class="link-login">Ya tengo cuenta</a>
-        </form>
-    </section>
+<main class="register-main">
+  <section class="contenedor-form">
+    <h2>Registrate</h2>
+    <form class="form-register" action="./login.html" method="get">
+        <!-- ingresar mail -->
+      <div class="ingresar_mail">
+        <label for="email">Email:</label>
+        <input class="mail" id="email" type="email" name="email" value="">
+      </div>
+<!-- ingresar contraseña -->
+      <div class="ingresar_contra">
+        <label for="password">Contraseña:</label>
+        <input class="contra" id="password" type="password" name="password" value="">
+      </div>
+<!-- repetir contraseña -->
+      <div class="repetir_contra">
+        <label for="repetir">Repetir contraseña:</label>
+        <input class="repetir" id="repetir" type="password" name="repetir-contraseña" value="">
+      </div>
+<!-- boton de terminos y condiciones -->
+      <div class="terminos-form">
+        <input id="terminos" type="checkbox" name="terminos" value="">
+        <label for="terminos">Acepto términos y condiciones</label>
+      </div>
+<!-- boton de enviar -->
+      <div class="boton">
+        <button class="bot_submit" type="submit">Registrarme</button>
+      </div>
+      <a href="./login.html" class="link-login">Ya tengo cuenta</a>
+    </form>
+  </section>
+  <img class="img_log" src="./imgs/logo.png" alt="login foto">
+</main>
 </body>
 </html>
