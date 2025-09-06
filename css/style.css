@@ -19,6 +19,20 @@ a {
  body{
    background-color: rgb(255, 246, 253) ;
  }
+    /* barra de nav vertical */
+.barra_nav{
+    width: fit-content;
+}
+.navegacion{
+    display: block;
+}
+.category{
+    margin: 2px 10px;
+    padding: 5px;
+    border: 1px solid rgb(158, 157, 157);
+    border-radius: 10px;
+}
+    /* best sellers y other */
  .seccion{
     display: flex;
     flex-direction: row;
