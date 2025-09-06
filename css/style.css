@@ -14,6 +14,85 @@ li {
 a { 
    text-decoration: none; color: #000; 
 }
- /*  */
 
- 
+ /* HOME */
+ .seccion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 15px auto 15px auto ;
+    justify-content: center;
+ }
+ .producto{
+    width: 20vw;
+    height: 60vh;
+    margin: 15px;
+
+ }
+ .producto img{
+    border: 2px #d3d3d3 solid;
+    display:block;
+    width: 100%;
+    height: 40vh;
+ }
+ .producto h3{
+    margin-left: 5px;
+ }
+ .producto p{
+    margin-left: 5px;
+ }
+ .producto a{
+    margin-left: 5px;
+ }
+ .titulo{
+    text-align: center;
+ }
+
+
+ /* LOGIN */
+.login{
+    display: flex;
+    height: 100vh;
+}
+ .login_info{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 246, 253);
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+.form_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ingresar_mail{
+    margin: 10px;
+    align-self: flex-end;
+}
+.ingresar_contra{
+    margin: 10px;
+}
+.boton{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+.bot_submit{
+    margin: 10px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    background-color: rgb(245, 206, 206);
+    border: 1px rgba(255, 255, 255, 0.535) solid;
+}
+.img_log{
+    display: block;
+    width: 100%; 
+    height: 100%;
+}
+.sin_cuenta{
+    
+}

@@ -9,31 +9,37 @@
 <body>
     <header></header>
 
-    <main>
+    <main class="login">
         <!-- FORMULARIO -->
-        <form action="./index.html" method="get">
-            
-            <!-- ingresar mail -->
-            <div>
-                <label for="mail">Email: </label>
-                <input id="mail" type="email" name="mail" value="">
-            </div>
+        <section class="login_info">
+            <h2>Login</h2>
+            <form class="form_login" action="./index.html" method="get">
+                
+                <!-- ingresar mail -->
+                <div class="ingresar_mail">
+                    <label for="mail">Email: </label>
+                    <input id="mail" type="email" name="mail" value="">
+                </div>
 
-            <!-- ingresal contraseña -->
-            <div>
-                <label for="contra">Contraseña: </label>
-                <input id="contra" type="password" name="password" value="">
-            </div>
+                <!-- ingresal contraseña -->
+                <div class="ingresar_contra">
+                    <label for="contra">Contraseña: </label>
+                    <input id="contra" type="password" name="password" value="">
+                </div>
 
-            <!-- boton de ingresar -->
-            <div>
-                <button type="submit">Ingresar</button>
-            </div>
-        </form>
+                <!-- boton de ingresar -->
+                <div class="boton">
+                    <button class="bot_submit" type="submit">Ingresar</button>
+                </div>
+            </form>
+
+            <!-- link al formulario de registro -->
+            <a class="sin_cuenta" href="./register.html">No tengo cuenta</a>
+
+        </section>
         
-        <!-- link al formulario de registro -->
-        <a href="./register.html">No tengo cuenta</a>
-
+        <img class="img_log" src="./imgs/logo.png" alt="login foto">
+        
     </main>
 
     <footer>
