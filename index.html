@@ -9,7 +9,24 @@
 <body>
     <header>
         <!-- logo + login + register -->
+        <div class="log_reg">
+            <a class="LR" href="./login.html">Login</a>
+            <a class="LR" href="./register.html">Register</a>
+        </div>
 
+        <!-- buscador -->
+        <form action="./search-results.html" method="get">
+            <label for="busqueda">Search:</label>
+            <input id="busqueda" type="text" name="queBusco" value="">
+            <button type="submit">search</button>
+        </form>
+
+        <!-- logo -->
+        <img class="logo" src="./imgs/logo-fichi.png" alt="img logo fichi">
+        
+    </header>
+    
+    <main>
         <!-- BARRA DE NAV VERTICAL -->
         <section>
             <nav>
@@ -41,10 +58,9 @@
                 </ul>
             </nav>
         </section>
-    </header>
-    
-    <main>
-        <!-- Seccion mas vendidos -->
+        
+        <!-- PRODUCTOS: best sellers -->
+
         <h2 class="titulo">Best sellers</h2>
         <section class="seccion">
             <article class="producto">
@@ -117,9 +133,10 @@
                 <p class="precio">$11.000</p>
                 <a class="detalle" href="./product.html">Ver detalle</a>
             </article>
-<!-- Seccion productos aleatorios -->
         </section>
-        <h2 class="titulo">Other products</h2>
+
+        <!-- PRODUCTOS: other products -->
+        <h2>Other products</h2>
         <section class="seccion">
             <article class="producto">
                 <img src="./imgs/beauty blender.png" alt="beauty blender">
@@ -193,7 +210,6 @@
             </article>
             
         </section>
-        
     </main>
     
     <footer></footer>
