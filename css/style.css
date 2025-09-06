@@ -14,6 +14,36 @@ li {
 a { 
    text-decoration: none; color: #000; 
 }
- /*  */
+ /* HOME */
+ .seccion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 15px auto 15px auto ;
+    justify-content: center;
+ }
+ .producto{
+    width: 20vw;
+    height: 60vh;
+    margin: 15px;
 
- 
+ }
+ .producto img{
+    border: 2px #d3d3d3 solid;
+    display:block;
+    width: 100%;
+    height: 40vh;
+ }
+ .producto h3{
+    margin-left: 5px;
+ }
+ .producto p{
+    margin-left: 5px;
+ }
+ .producto a{
+    margin-left: 5px;
+ }
+ .titulo{
+    text-align: center;
+ }
