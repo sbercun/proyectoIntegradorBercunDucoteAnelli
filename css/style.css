@@ -2,7 +2,7 @@
 * { 
     box-sizing: border-box; 
  }
-body {
+main {
     margin: 0;
 }	
 ul, ol {
@@ -16,6 +16,9 @@ a {
 }
 
  /* HOME */
+ body{
+   background-color: rgb(255, 246, 253) ;
+ }
  .seccion{
     display: flex;
     flex-direction: row;
@@ -69,30 +72,74 @@ a {
     justify-content: center;
     align-items: center;
 }
+    /* mail y contra */
 .ingresar_mail{
     margin: 10px;
     align-self: flex-end;
 }
+.mail{
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px rgba(51, 50, 50, 0.535) solid;
+}
 .ingresar_contra{
     margin: 10px;
+    align-self: flex-end;
 }
+.contra{
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px rgba(51, 50, 50, 0.535) solid;
+}
+    /* boton */
 .boton{
     display: flex;
-    justify-content: start;
+    justify-content: flex-end;
     width: 100%;
 }
 .bot_submit{
     margin: 10px;
-    border-radius: 15px;
-    padding: 5px 15px;
+    border-radius: 10px;
+    padding: 6px 15px;
     background-color: rgb(245, 206, 206);
-    border: 1px rgba(255, 255, 255, 0.535) solid;
+    border: none;
+    width: 100%;
 }
+    /* img */
 .img_log{
     display: block;
     width: 100%; 
     height: 100%;
 }
-.sin_cuenta{
-    
+/* REGISTER */
+.register-main{
+   display: flex;
+   height: 100vh;
+
 }
+.contenedor-form{
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(255, 246, 253);
+   justify-content: center;
+   align-items: center;
+   width: 50vw;
+}
+.form-register{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+/* repetir contra (para mail, contra y la imagen se usaron las mismas clases que la seccion de login)*/
+.repetir_contra{
+   margin: 10px;
+}
+.repetir{
+   border-radius: 10px;
+   padding: 5px 10px;
+   border: 1px rgba(51, 50, 50, 0.535) solid;
+
+}
+   
+
