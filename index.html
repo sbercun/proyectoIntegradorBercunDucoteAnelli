@@ -9,7 +9,23 @@
 <body>
     <header>
         <!-- logo + login + register -->
+        <div class="log_reg">
+            <a class="LR" href="./login.html">Login</a>
+            <a class="LR" href="./register.html">Register</a>
+        </div>
 
+        <!-- buscador -->
+        <form action="./search-results.html" method="get">
+            <label for="busqueda">Search:</label>
+            <input id="busqueda" type="text" name="">
+        </form>
+
+        <!-- logo -->
+        <img class="logo" src="./imgs/logo-fichi.png" alt="img logo fichi">
+        
+    </header>
+    
+    <main>
         <!-- BARRA DE NAV VERTICAL -->
         <section>
             <nav>
@@ -41,9 +57,8 @@
                 </ul>
             </nav>
         </section>
-    </header>
-    
-    <main>
+        
+        <!-- PRODUCTOS: best sellers -->
         <h2>Best sellers</h2>
         <section class="seccion">
             <article class="producto">
@@ -118,6 +133,8 @@
             </article>
 
         </section>
+
+        <!-- PRODUCTOS: other products -->
         <h2>Other products</h2>
         <section class="seccion">
             <article class="producto">
@@ -192,7 +209,6 @@
             </article>
             
         </section>
-        
     </main>
     
     <footer></footer>
