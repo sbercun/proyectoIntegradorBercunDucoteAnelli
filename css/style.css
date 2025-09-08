@@ -17,11 +17,17 @@ a {
 
  /* HOME */
  body{
-   background-color: rgb(255, 246, 253) ;
+   background-color: rgb(253 253 252) ;
  }
  main{
     display: flex;
     height: 100vh;
+ }
+ .encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px;
  }
 
  /* barra de nav vertical */
@@ -81,7 +87,8 @@ a {
     margin-left: 5px;
  }
  .titulo{
-    text-align: center;
+    text-align: left;
+    margin: 0px 90px;
  }
 
 
@@ -93,7 +100,7 @@ a {
  .login_info{
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 246, 253);
+    background-color: rgb(253 253 252);
     justify-content: center;
     align-items: center;
     width: 50vw;
@@ -152,7 +159,7 @@ a {
 .contenedor-form{
    display: flex;
    flex-direction: column;
-   background-color: rgb(255, 246, 253);
+   background-color: rgb(253 253 252);
    justify-content: center;
    align-items: center;
    width: 50vw;
