@@ -172,7 +172,27 @@ a {
 
 }
 
-/*Product*/
+/*CATEGORY*/
+
+.productos_skincare{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detalle_producto{
+    padding: 10px;
+    border-radius: 8x;
+    width: 30%;
+    border: 1px solid lightpink;
+    margin-bottom: 15px;
+}
+
+.imgs{
+    max-width: 100%;
+    display: block;
+  
+}
 
 
    
