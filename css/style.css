@@ -23,6 +23,7 @@ a {
     display: flex;
     height: 100vh;
  }
+
  /* barra de nav vertical */
 .barra_nav{
     display: flex;
@@ -68,6 +69,7 @@ a {
     display:block;
     width: 100%;
     height: 30vh;
+    border-radius: 10px;
  }
  .producto h3{
     margin-left: 5px;
