@@ -13,22 +13,22 @@
         <section class="encabezado">
             <!-- logo + login + register -->
             <div class="log_reg">
-                <a class="LR" href="./login.html">Login</a>
-                <a class="LR" href="./register.html">Register</a>
+                <a class="lr" href="./login.html">Login</a>
+                <a class="lr" href="./register.html">Register</a>
             </div>
             <!-- logo -->
             <div class="contenedor_logo">
                 <a href="./index.html"><img class="logo" src="./imgs/logo-fichi.png" alt="img logo fichi"></a>
             </div>
             <!-- buscador -->
-            <form action="search-results.html" method="get">
-                <label for="busqueda">Search:</label>
+            <form class="buscador" action="search-results.html" method="get">
+                <button class="btn_busqueda" type="submit"><img class="lupa" src="./imgs/lupa.png" alt="lupa de busqueda"></button>
+                <label for="busqueda"></label>
                 <input id="busqueda" type="text" name="queBusco" value="">
-                <button type="submit">search</button>
             </form>
-
-            
         </section>
+
+         
     </header>
 
     <main>

@@ -23,13 +23,51 @@ a {
     display: flex;
     height: 100vh;
  }
+ header{
+    background-color: white;
+    border-bottom: 2px solid #e4e4e4;
+ }
  .encabezado{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 0px 20px;
  }
-
+ .contenedor_logo{
+    display: flex;           
+    align-items: center;     
+    padding: 0 20px; 
+    text-align: center;
+ }
+ .logo{
+    display: inline-block;
+    height: 100px;
+    width: auto;
+ }
+.buscador{
+    order: -1;
+    display: flex;
+    align-items: center;
+}
+.log_reg{
+    order: 2;
+}
+.lr{
+    margin-left: 15px;
+}
+.btn_busqueda{
+    width: 25px;              
+    height: 25px;
+    padding: 0; 
+    border: 1px solid rgb(255, 255, 255);  
+    border-radius: 10px;
+    background-image: url(../imgs/lupa.png);
+}
+.lupa{
+    width: 15px;
+    height: auto;
+}
  /* barra de nav vertical */
 .barra_nav{
     display: flex;
@@ -38,6 +76,7 @@ a {
 .navegacion{
     display: block;
     width: 20vw;
+    margin-top: 50px;
 }
 .category{
     margin: 10px 10px 25px 10px;
@@ -49,6 +88,7 @@ a {
 .contenedor_main{
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
  .seccion{
     display: flex;
