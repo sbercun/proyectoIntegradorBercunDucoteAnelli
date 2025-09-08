@@ -7,8 +7,24 @@
     <title>SEARCH RESULTS</title>
 </head>
 <body>
-    
     <header>
+        <section class="encabezado">
+            <!-- logo + login + register -->
+            <div class="log_reg">
+                <a class="lr" href="./login.html">LOGIN</a>
+                <a class="lr" href="./register.html">REGISTER</a>
+            </div>
+            <!-- logo -->
+            <div class="contenedor_logo">
+                <a href="./index.html"><img class="logo" src="./imgs/logo-fichi.png" alt="img logo fichi"></a>
+            </div>
+            <!-- buscador -->
+            <form class="buscador" action="search-results.html" method="get">
+                <button class="btn_busqueda" type="submit"><img class="lupa" src="./imgs/lupa.png" alt="lupa de busqueda"></button>
+                <label for="busqueda"></label>
+                <input id="busqueda" type="text" name="queBusco" value="">
+            </form>
+        </section>
     </header>
 
     <main>
