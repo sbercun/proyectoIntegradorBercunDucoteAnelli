@@ -11,10 +11,7 @@
 <body>
 
     <!--A esta pagina pasaria el usuario 
-al hacer click en la categoria Skin care en home.
-Desde aca, agrego un boton (o puede ser clickeando en la foto 
-del producto tambien) que los lleve a la pagina product.html
-para ver el detalle del producto-->
+al hacer click en la categoria Skin care en home.-->
 
     <!-- Header-->
     <header>
@@ -30,7 +27,8 @@ para ver el detalle del producto-->
             </div>
             <!-- buscador -->
             <form class="buscador" action="search-results.html" method="get">
-                <button class="btn_busqueda" type="submit"><img class="lupa" src="./imgs/lupa.png" alt="lupa de busqueda"></button>
+                <button class="btn_busqueda" type="submit"><img class="lupa" src="./imgs/lupa.png"
+                        alt="lupa de busqueda"></button>
                 <label for="busqueda"></label>
                 <input id="busqueda" type="text" name="queBusco" value="">
             </form>
@@ -39,9 +37,9 @@ para ver el detalle del producto-->
 
     <!--Categoria: Skin care-->
     <main>
+        <div class="category_container">
+        <h1 class="titulo_skincare">Skin care</h1>
         <section class="productos_skincare">
-            <h1>Skin care</h1>
-
             <article class="detalle_producto">
                 <h2>Tónico exfoliante con ácido glicólico</h2>
                 <img class="imgs" src="./imgs/tónico ácido glicolico.png" alt="tonico">
@@ -105,6 +103,7 @@ para ver el detalle del producto-->
                 <a href="product.html">Ver detalle</a>
             </article>
         </section>
+        </div>
     </main>
 
     <!--Footer-->

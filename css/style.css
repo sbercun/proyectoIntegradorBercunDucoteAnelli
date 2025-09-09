@@ -1,75 +1,91 @@
 /* INICIALIZAR VALORES */
-* { 
-    box-sizing: border-box; 
- }
-main {
-    margin: 0;
-}	
-ul, ol {
-    padding: 0;
-}
-li {
-    list-style-type: none; 
-}
-a { 
-   text-decoration: none; color: #000; 
+* {
+    box-sizing: border-box;
 }
 
- /* HOME */
- body{
-   background-color: rgb(253 253 252) ;
- }
- main{
+main {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* HOME */
+body {
+    background-color: rgb(253 253 252);
+}
+
+main {
     display: flex;
     height: 100vh;
- }
- header{
+}
+
+header {
     background-color: white;
     border-bottom: 2px solid #e4e4e4;
- }
- .encabezado{
+}
+
+.encabezado {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0px 20px;
- }
- .contenedor_logo{
-    display: flex;           
-    align-items: center;     
-    padding: 0 20px; 
+}
+
+.contenedor_logo {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
     text-align: center;
- }
- .logo{
+}
+
+.logo {
     display: inline-block;
     height: 100px;
     width: auto;
- }
-.buscador{
+}
+
+.buscador {
     order: -1;
     display: flex;
     align-items: center;
 }
-.log_reg{
+
+.log_reg {
     order: 2;
 }
-.lr{
+
+.lr {
     margin-left: 15px;
 }
-.btn_busqueda{
-    width: 25px;              
+
+.btn_busqueda {
+    width: 25px;
     height: 25px;
-    padding: 0; 
-    border: 1px solid rgb(255, 255, 255);  
+    padding: 0;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     background-image: url(../imgs/lupa.png);
 }
-.lupa{
+
+.lupa {
     width: 15px;
     height: auto;
 }
 
-.detalle{
+.detalle {
     margin-bottom: auto;
     display: flex;
     justify-content: center;
@@ -80,15 +96,17 @@ a {
     border-radius: 10px;
 }
 
- /* barra de nav vertical */
-.barra_nav{
+/* barra de nav vertical */
+.barra_nav {
     display: flex;
     width: 40vw;
 }
-.titulo_categorias{
+
+.titulo_categorias {
     margin: 10px 0px;
 }
-.navegacion{
+
+.navegacion {
     display: block;
     width: 20vw;
     margin-top: 50px;
@@ -98,66 +116,78 @@ a {
     border: 1px solid #d7d7d7;
     border-radius: 12px;
 }
-.category{
+
+.category {
     margin: 6px 0px;
     padding: 5px;
     border: 1px solid rgb(158, 157, 157);
     border-radius: 10px;
 }
-    /* best sellers y other */
-.contenedor_main{
+
+/* best sellers y other */
+.contenedor_main {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
- .seccion{
+
+.seccion {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 15px auto 15px auto ;
+    margin: 15px auto 15px auto;
     justify-content: center;
     width: 80vw;
- }
- .best{
+}
+
+.best {
     align-self: flex-start;
- }
- .other{
+}
+
+.other {
     align-self: flex-end;
- }
- .producto{
+}
+
+.producto {
     width: 15vw;
     height: 50vh;
     margin: 15px;
 
- }
- .producto img{
+}
+
+.producto img {
     border: 2px #d3d3d3 solid;
-    display:block;
+    display: block;
     width: 100%;
     height: 30vh;
     border-radius: 10px;
- }
- .producto h3{
+}
+
+.producto h3 {
     margin-left: 5px;
- }
- .producto p{
+}
+
+.producto p {
     margin-left: 5px;
- }
- .producto a{
+}
+
+.producto a {
     margin-left: 5px;
- }
- .titulo{
+}
+
+.titulo {
     text-align: left;
     margin: 0px 90px;
- }
+}
 
 
- /* LOGIN */
-.login{
+/* LOGIN */
+.login {
     display: flex;
     height: 100vh;
 }
- .login_info{
+
+.login_info {
     display: flex;
     flex-direction: column;
     background-color: rgb(253 253 252);
@@ -165,38 +195,45 @@ a {
     align-items: center;
     width: 50vw;
 }
-.form_login{
+
+.form_login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-    /* mail y contra */
-.ingresar_mail{
+
+/* mail y contra */
+.ingresar_mail {
     margin: 10px;
     align-self: flex-end;
 }
-.mail{
+
+.mail {
     border-radius: 10px;
     padding: 5px 10px;
     border: 1px rgba(51, 50, 50, 0.535) solid;
 }
-.ingresar_contra{
+
+.ingresar_contra {
     margin: 10px;
     align-self: flex-end;
 }
-.contra{
+
+.contra {
     border-radius: 10px;
     padding: 5px 10px;
     border: 1px rgba(51, 50, 50, 0.535) solid;
 }
-    /* boton */
-.boton{
+
+/* boton */
+.boton {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
-.bot_submit{
+
+.bot_submit {
     margin: 10px;
     border-radius: 10px;
     padding: 6px 15px;
@@ -204,69 +241,102 @@ a {
     border: none;
     width: 100%;
 }
-    /* img */
-.img_log{
+
+/* img */
+.img_log {
     display: block;
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
+
 /* REGISTER */
-.register-main{
-   display: flex;
-   height: 100vh;
+.register-main {
+    display: flex;
+    height: 100vh;
 
 }
-.contenedor-form{
-   display: flex;
-   flex-direction: column;
-   background-color: rgb(253 253 252);
-   justify-content: center;
-   align-items: center;
-   width: 50vw;
+
+.contenedor-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253 253 252);
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
 }
-.form-register{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 /* repetir contra (para mail, contra y la imagen se usaron las mismas clases que la seccion de login)*/
-.repetir_contra{
-   margin: 10px;
+.repetir_contra {
+    margin: 10px;
 }
-.repetir{
-   border-radius: 10px;
-   padding: 5px 10px;
-   border: 1px rgba(51, 50, 50, 0.535) solid;
+
+.repetir {
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px rgba(51, 50, 50, 0.535) solid;
 
 }
 
 /*CATEGORY*/
 
-.productos_skincare{
+.category_container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+.titulo_skincare{
+    display: block;
+    width: 100vw;
+    text-align: center;
+    margin: 20px 0px 12px;
+
+}
+
+.productos_skincare {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
+
+
 }
 
-.detalle_producto{
-    padding: 10px;
-    border-radius: 8x;
-    width: 30%;
-    border: 1px solid lightpink;
+.detalle_producto {
+    padding: 12px;
     margin-bottom: 15px;
+    border: 2px #d3d3d3 solid;
+    display: block;
+    width: 30%;
+    height: 110vh;
+    border-radius: 10px;
+
 }
 
-.imgs{
+.imgs {
     max-width: 100%;
     display: block;
-  
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+
+
+
 }
 
 /* PRODUCT */
-.main_produ{
+.main_produ {
     margin-top: 50px;
 }
-   
-
