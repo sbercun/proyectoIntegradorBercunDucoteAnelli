@@ -20,10 +20,15 @@ a {
     text-decoration: none;
     color: #000;
 }
+p{
+    font-size: 13px;
+}
 
 /* HOME */
 body {
     background-color: rgb(253 253 252);
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
 }
 
 main {
@@ -92,8 +97,9 @@ header {
     align-items: center;
     width: 7vw;
     height: 3vh;
-    border: 1px solid rgb(158, 157, 157);
+    border: 1px solid rgb(245 206 206);
     border-radius: 10px;
+    background-color: #fff9fa;
 }
 
 /* barra de nav vertical */
@@ -112,16 +118,17 @@ header {
     margin-top: 50px;
     margin-left: 15px;
     padding: 8px;
-    background: #fff;
-    border: 1px solid #d7d7d7;
+    background-color: rgb(245, 206, 206);
+    border: 1px solid #ffffff;
     border-radius: 12px;
 }
 
 .category {
     margin: 6px 0px;
     padding: 5px;
-    border: 1px solid rgb(158, 157, 157);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
+    background-color: #fff9fa;
 }
 
 /* best sellers y other */
@@ -135,7 +142,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 15px auto 15px auto;
+    margin: 0px auto 15px auto;
     justify-content: center;
     width: 80vw;
 }
@@ -150,7 +157,7 @@ header {
 
 .producto {
     width: 15vw;
-    height: 50vh;
+    /* height: 50vh; */
     margin: 15px;
 
 }
@@ -165,6 +172,7 @@ header {
 
 .producto h3 {
     margin-left: 5px;
+    margin-bottom: 8px;
 }
 
 .producto p {
@@ -294,8 +302,8 @@ header {
 
 .titulo_skincare{
     display: block;
-    width: 100vw;
-    text-align: center;
+    /* width: 100vw;
+    text-align: center; */
     margin: 20px 0px 12px;
 
 }
@@ -315,7 +323,6 @@ header {
     border: 2px #d3d3d3 solid;
     display: block;
     width: 30%;
-    height: 110vh;
     border-radius: 10px;
 
 }
