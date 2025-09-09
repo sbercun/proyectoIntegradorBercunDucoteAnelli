@@ -68,6 +68,18 @@ a {
     width: 15px;
     height: auto;
 }
+
+.detalle{
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vw;
+    height: 3vh;
+    border: 1px solid rgb(158, 157, 157);
+    border-radius: 10px;
+}
+
  /* barra de nav vertical */
 .barra_nav{
     display: flex;
