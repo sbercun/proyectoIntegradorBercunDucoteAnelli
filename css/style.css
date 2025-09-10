@@ -20,7 +20,8 @@ a {
     text-decoration: none;
     color: #000;
 }
-p{
+
+p {
     font-size: 13px;
 }
 
@@ -89,6 +90,7 @@ header {
     width: 15px;
     height: auto;
 }
+
 /* boton de ver detalle */
 .detalle {
     margin-bottom: auto;
@@ -294,18 +296,16 @@ header {
 
 /*CATEGORY*/
 
-.category_container{
+.category_container {
     width: 90vw;
     margin: 0 auto;
 }
 
-
-.titulo_skincare{
+.titulo_skincare {
     display: block;
-    /* width: 100vw;
-    text-align: center; */
     margin: 20px 0px 12px;
-
+    width: 100vw;
+    text-align: center;
 }
 
 .productos_skincare {
@@ -313,7 +313,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
-
 
 }
 
@@ -327,7 +326,8 @@ header {
 
 }
 
-.imgs {
+/*imagenes category*/
+.imgs_category {
     max-width: 100%;
     display: block;
 
@@ -339,11 +339,55 @@ footer {
     flex-wrap: wrap;
     list-style: none;
 
-
-
 }
 
 /* PRODUCT */
+
+.titulo_prod {
+    width: 100vw;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
 .main_produ {
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
 }
+
+.descripcion_prod {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.datos_prod {
+    width: 100%;
+    margin: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imagen_prod{
+    width: 40vw;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.review{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo_review{
+    display: flex;
+    justify-content: space-around;
+}
+
