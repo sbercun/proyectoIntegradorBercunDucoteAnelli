@@ -16,7 +16,7 @@ p {
 }
 footer {
     list-style: none;
-    /* position: fixed; */
+    position: fixed;
 }
 
 /* HOME */
