@@ -15,9 +15,6 @@ p {
     font-size: 13px;
 }
 footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     list-style: none;
     /* position: fixed; */
 }
@@ -143,7 +140,6 @@ header {
     flex-wrap: wrap;
     margin: 0px auto 15px auto;
     justify-content: center;
-    width: 80vw;
 }
 
 .best {
@@ -156,9 +152,7 @@ header {
 
 .producto {
     width: 15vw;
-    /* height: 50vh; */
     margin: 15px;
-
 }
 
 .producto img {
@@ -300,9 +294,7 @@ header {
 
 .titulo_skincare {
     display: block;
-    margin: 20px 0px 12px;
-    width: 100vw;
-    text-align: center;
+    margin: 40px 0px;
 }
 
 .productos_skincare {
