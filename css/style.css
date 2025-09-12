@@ -1,28 +1,25 @@
 /* INICIALIZAR VALORES */
 * {
     box-sizing: border-box;
-}
-
-main {
+    padding: 0;
     margin: 0;
 }
-
-ul,
-ol {
-    padding: 0;
-}
-
 li {
     list-style-type: none;
 }
-
 a {
     text-decoration: none;
     color: #000;
 }
-
 p {
     font-size: 13px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    /* position: fixed; */
 }
 
 /* HOME */
@@ -330,14 +327,6 @@ header {
 .imgs_category {
     max-width: 100%;
     display: block;
-
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
 
 }
 
