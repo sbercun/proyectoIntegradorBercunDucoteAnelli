@@ -16,7 +16,10 @@ p {
 }
 footer {
     list-style: none;
-    position: fixed;
+    position: relative;
+    bottom: 0;
+    left: 40;
+    text-align: center;
 }
 
 /* HOME */
