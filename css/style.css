@@ -101,6 +101,13 @@ header {
     margin: 10px 0px;
 }
 
+/* BARRA NAV VERTICAL */
+.contenedor_nav{
+    height: 100%;
+    /* no habia otra forma de que la barra de navegacion llegue hasta el fondo, asi que Luca nos dijo que usemos % */
+
+}
+
 .navegacion {
     display: block;
     width: 300px;
