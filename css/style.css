@@ -98,14 +98,13 @@ header {
 }
 
 .titulo_categorias {
-    margin: 10px 0px;
+    margin: 73px 0px 0px 23px;
 }
 
 /* BARRA NAV VERTICAL */
 .contenedor_nav{
     height: 100%;
     /* no habia otra forma de que la barra de navegacion llegue hasta el fondo, asi que Luca nos dijo que usemos % */
-
 }
 
 .navegacion {
@@ -113,7 +112,7 @@ header {
     width: 300px;
     height: 100%;
     /* no habia otra forma de que la barra de navegacion llegue hasta el fondo, asi que Luca nos dijo que usemos % */
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 15px;
     padding: 8px;
     background-color: rgb(245, 206, 206);
@@ -122,7 +121,7 @@ header {
 }
 
 .category {
-    margin: 20px 0px;
+    margin-bottom: 21px;
     padding: 8px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
