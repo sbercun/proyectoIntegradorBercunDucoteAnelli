@@ -69,6 +69,9 @@ header {
 .lr {
     margin-left: 15px;
 }
+.list_lr{
+    display: flex;
+}
 
 .btn_busqueda {
     width: 25px;
