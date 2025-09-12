@@ -103,7 +103,8 @@ header {
 
 .navegacion {
     display: block;
-    width: 350px;
+    width: 300px;
+    height: 2800px;
     margin-top: 50px;
     margin-left: 15px;
     padding: 8px;
@@ -113,8 +114,8 @@ header {
 }
 
 .category {
-    margin: 6px 0px;
-    padding: 5px;
+    margin: 20px 0px;
+    padding: 8px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     background-color: #fff9fa;
@@ -162,7 +163,8 @@ header {
 
 .titulo {
     text-align: left;
-    margin: 0px 90px;
+    margin: 0px 74px;    
+    font-size: 25px;
 }
 
 
