@@ -73,15 +73,15 @@ header {
     display: flex;
 }
 
-.btn_busqueda {
+.btn_lupa {
     width: 25px;
     height: 25px;
-    padding: 0;
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
     background-image: url(../imgs/lupa.png);
 }
-
+.boton_buscar{
+    border-radius: 20px;
+}
 .lupa {
     width: 15px;
     height: auto;
