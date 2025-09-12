@@ -91,17 +91,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 7vw;
-    height: 3vh;
+    width: 110px;
+    height: 30px;
     border: 1px solid rgb(245 206 206);
     border-radius: 10px;
     background-color: #fff9fa;
-}
-
-/* barra de nav vertical */
-.barra_nav {
-    display: flex;
-    width: 40vw;
 }
 
 .titulo_categorias {
@@ -110,7 +104,7 @@ header {
 
 .navegacion {
     display: block;
-    width: 20vw;
+    width: 350px;
     margin-top: 50px;
     margin-left: 15px;
     padding: 8px;
@@ -142,16 +136,8 @@ header {
     justify-content: center;
 }
 
-.best {
-    align-self: flex-start;
-}
-
-.other {
-    align-self: flex-end;
-}
-
 .producto {
-    width: 15vw;
+    width: 230px;
     margin: 15px;
 }
 
@@ -159,17 +145,16 @@ header {
     border: 2px #d3d3d3 solid;
     display: block;
     width: 100%;
-    height: 30vh;
+    height: 250px;
     border-radius: 10px;
 }
 
 .producto h3 {
-    margin-left: 5px;
-    margin-bottom: 8px;
+    margin: 15px 0 8px 5px;
 }
 
 .producto p {
-    margin-left: 5px;
+    margin: 0 0 13px 5px;
 }
 
 .producto a {
