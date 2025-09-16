@@ -206,4 +206,75 @@ h2{
     align-self: center;
 }
 
+/* MEDIA QUERIS */ /* Telefono */
+@media(max-width: 490px){
+   /* encabezado */
+    header{
+        width: 1150px;
+    }
+    .encabezado{
+        width: 1150px;
+    }
+    .list_lr{
+        flex-direction: column;
+        align-self: flex-end;
+    }
 
+    /* productos */
+    .seccion{
+        flex-direction: column;
+        width: 900px;
+    }
+    .producto{
+        width: 100%;
+        height: 400px;
+        margin-left: 318px;
+        margin-bottom: 360px;
+    }
+    .producto img{
+        width: 60%;
+        height: 500px;
+    }
+
+    /* barra nav */
+    main{
+        display: block;
+    }
+    .barra_nav{
+        width: 1180px;
+        display: flex;
+        flex-direction: row;
+    }
+    .category{
+        width: 1160px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .titulo_categorias{
+        font-size: 35px;
+    }
+    
+    /* tipografia */
+    p{
+        font-size: 25px;
+        width: 510px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .detalle{
+        width: 240px;
+        height: 50px;
+    }
+    a{
+        font-size: 23px;
+    }
+
+    /* login y register */
+    .login_register{
+        display: block;
+    }
+    .contenedor_form{
+        height: 100px;
+    }
+}
