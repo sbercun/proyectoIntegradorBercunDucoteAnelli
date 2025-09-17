@@ -151,7 +151,7 @@ main{
 /* LOGIN Y REGISTER */
 .login_register {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
 }
