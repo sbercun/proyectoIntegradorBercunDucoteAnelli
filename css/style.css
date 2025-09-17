@@ -209,30 +209,7 @@ h2{
 
 /*CATEGORY*/
 
-/*en home es .titulo*/
-.titulo_skincare{
-    text-align: center;
-    margin: 30px;   
-    font-size: 25px;
-    padding: 20px;
-}
-
-/*en home es seccion*/
-.productos_skincare{
-   width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/*en home es producto*/
-.detalle_producto{
-     width: 230px;
-    margin: 25px;
-}
-    
-
-/* en home es producto img*/
+/* en home es producto img?*/
 .imgs_category{
     width: 100%;
     height: 250px;
@@ -255,9 +232,6 @@ h2{
     align-items: center;
     flex-direction: column;
     font-size: 30px;
-    
-    
-
 }
 
 .tag1, .tag2, .tag3{
