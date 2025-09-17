@@ -198,7 +198,7 @@ h2{
 /* imagen */
 .img_login {
     display: block;
-    width: 50%;
+    width: 40%;
     height: auto;
     border-radius: 50px;
 }
@@ -356,5 +356,10 @@ h2{
     }
     .img_login{
         width: 0px;
+    }
+
+    /* footer */
+    .nav_footer{
+        width: 1150px;
     }
 }
