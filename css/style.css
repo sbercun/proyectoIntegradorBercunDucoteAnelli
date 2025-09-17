@@ -220,6 +220,12 @@ h2{
 
 
 /*PRODUCT*/
+.contenedor_info_y_review{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: center;
+}
 
 .titulo_prod{
     text-align: center;
@@ -228,9 +234,9 @@ h2{
 }
 
 .info_producto{
-    margin: 20px;
-    padding: 20px;
+    margin: 40px 0 20px 0;
     display: flex;
+    align-self: center;
     
 }
 .datos_prod{
@@ -242,7 +248,7 @@ h2{
     
 }
 
-.tag1, .tag2, .tag3{
+.tag{
     border: 2px rgb(245, 206, 206) solid;
     border-radius: 5px;
     margin: 50px 10px;
@@ -253,20 +259,21 @@ h2{
 
 .imagen_prod{
    display: flex;
-    align-self: center;
-    height: 500px;
-    
-
+   height: 500px;
+   border: 2px #d3d3d3 solid;
+   border-radius: 10px;
+   margin-bottom: 20px;
 }
 .padre_review{
-    display: block;
-    flex-wrap: nowrap;
-    margin-top: 50px;
-      
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    width: 800px;
 }
 
 .review{
+    margin: 15px;
     padding: 10px;
     border: 1px solid #d3d3d3;
     border-radius: 10px;
