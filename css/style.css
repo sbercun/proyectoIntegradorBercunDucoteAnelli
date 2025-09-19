@@ -316,7 +316,7 @@ h2{
         display: block;
     }
     .barra_nav{
-        width: 1180px;
+        /* width: 1180px; */
         display: flex;
         flex-direction: row;
     }
