@@ -45,7 +45,7 @@ header{
     width: 25px;
     height: 25px;
     border: 1px solid white;
-    background-image: url(../imgs/lupa.png);
+    background-image: url('../imgs/lupa.png');
 }
     /* login y register */
 .log_reg{
