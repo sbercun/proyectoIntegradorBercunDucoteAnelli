@@ -39,7 +39,6 @@ header{
 }
 .lupa{
     width: 15px;
-    height: auto;
 }
 .btn_lupa{
     width: 25px;
@@ -352,5 +351,8 @@ h2{
     }
     .img_login{
         width: 0px;
+    }
+    footer{
+        width: 1200px;
     }
 }
