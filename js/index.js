@@ -1,19 +1,18 @@
 //BARRA NAV VERTICAL
 let categorias = document.querySelector(".lista")
-fetch(('https://dummyjson.com/products/categories'))
+fetch(('https://dummyjson.com/products/category-list'))
 
   .then(function(respuesta) {
     return respuesta.json()
   })
 
   .then(function(data) {
-    console.log(data)
 
     for (let i = 0; i < data.length; i++) {
       let categoria= data[i]
       categorias.innerHTML += `
         <li class="category">
-          <a href="./category.html">${categoria.name}</a>
+          <a href="./category.html?category=${categoria}">${categoria}</a>
         </li>`
     }
   })

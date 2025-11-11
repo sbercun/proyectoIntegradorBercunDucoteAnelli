@@ -116,6 +116,7 @@ main{
     text-align: center;
     margin: 25px;   
     font-size: 25px;
+    text-transform: uppercase;
 }
 .producto {
     width: 230px;
