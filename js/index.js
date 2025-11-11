@@ -35,15 +35,17 @@ fetch(('https://dummyjson.com/products/category/beauty'))
   .then(function(data) {
 
     for (let i = 0; i < 10; i++) {
-      let producto = data.products[i]
-      beauty.innerHTML += `
-        <article class="producto">
-          <img src="${producto.thumbnail}" alt="${producto.title}">
-          <h3>${producto.title}</h3>
-          <p>${producto.description}</p>
-          <p class="precio" >$${producto.price}</p>
-          <a class="detalle" href="product.html">Ver detalle</a>
-        </article>`
+        let producto = data.products[i]
+        if (producto){
+            beauty.innerHTML += `
+                <article class="producto">
+                <img src="${producto.thumbnail}" alt="${producto.title}">
+                <h3>${producto.title}</h3>
+                <p>${producto.description}</p>
+                <p class="precio" >$${producto.price}</p>
+                <a class="detalle" href="product.html">Ver detalle</a>
+                </article>`
+        }
     }
   })
   .catch(function(error) {
@@ -60,16 +62,17 @@ fetch(("https://dummyjson.com/products/category/fragrances"))
   .then(function(data) {
 
     for (let i = 0; i < 20; i++) {
-      let producto = data.products[i]
-      fragances.innerHTML += `
-        <article class="producto">
-          <img src="${producto.thumbnail}" alt="${producto.title}">
-          <h3>${producto.title}</h3>
-          <p>${producto.description}</p>
-          <p class="precio" >$${producto.price}</p>
-          <a class="detalle" href="product.html">Ver detalle</a>
-        </article>`
-
+        let producto = data.products[i]
+        if (producto){
+            fragances.innerHTML += `
+                <article class="producto">
+                <img src="${producto.thumbnail}" alt="${producto.title}">
+                <h3>${producto.title}</h3>
+                <p>${producto.description}</p>
+                <p class="precio" >$${producto.price}</p>
+                <a class="detalle" href="product.html">Ver detalle</a>
+                </article>`
+        }
     }
   })
 
