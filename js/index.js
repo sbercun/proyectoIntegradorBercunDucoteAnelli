@@ -9,11 +9,14 @@ fetch(('https://dummyjson.com/products/category-list'))
   .then(function(data) {
 
     for (let i = 0; i < data.length; i++) {
-      let categoria= data[i]
-      categorias.innerHTML += `
-        <li class="category">
-          <a href="./category.html?category=${categoria}">${categoria}</a>
-        </li>`
+        let categoria = data[i]
+        if (categoria){
+            categorias.innerHTML += `
+                <li class="category">
+                <a href="./category.html?category=${categoria}">${categoria}</a>
+                </li>`
+            console.log("CATEGORIAS")
+        }
     }
   })
   .catch(function(error) {
@@ -23,7 +26,7 @@ fetch(('https://dummyjson.com/products/category-list'))
 //SECCION MAIN
 // capturamos los contenedores de cada sección
 let beauty = document.querySelector(".seccion.beauty")
-let fragances= document.querySelector(".seccion.fragrances")
+let fragances = document.querySelector(".seccion.fragrances")
 
 //primer fetch (seccion beauty)
 fetch(('https://dummyjson.com/products/category/beauty'))
@@ -45,6 +48,7 @@ fetch(('https://dummyjson.com/products/category/beauty'))
                 <p class="precio" >$${producto.price}</p>
                 <a class="detalle" href="product.html">Ver detalle</a>
                 </article>`
+                console.log("PRODUCTO")
         }
     }
   })
@@ -72,6 +76,7 @@ fetch(("https://dummyjson.com/products/category/fragrances"))
                 <p class="precio" >$${producto.price}</p>
                 <a class="detalle" href="product.html">Ver detalle</a>
                 </article>`
+            console.log("FRAGANCIAS")
         }
     }
   })
