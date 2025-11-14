@@ -50,10 +50,10 @@ fetch(url)
                     </div>
                     <div class="datos_prod">
                         <p><strong>Marca:</strong> ${data.brand}</p>
-                        <p><strong>Descripción:</strong>${data.description}</p>
+                        <p><strong>Descripción:</strong> ${data.description}</p>
                         <p><strong>Precio:</strong> ${data.price}</p>
-                        <p><strong>Categoría:</strong>${data.category}</p>
-                        <p><strong>Stock:</strong>${data.stock}</p>
+                        <p><strong>Categoría:</strong><a href="category.html?category=${data.category}"> ${data.category}</a></p>
+                        <p><strong>Stock:</strong> ${data.stock}</p>
                     </div>
 
                     <ul class="tags"> 
@@ -62,7 +62,7 @@ fetch(url)
                     </ul>
                 </article>`
     let lista_reviews = data.reviews
-    for (let i = 0; i < lista_reviews.length; i++) {
+    for (let i = 0; i < 4; i++) {
         let review = lista_reviews[i]
         contenedor_reviews.innerHTML +=`<article class="review">
                     <p><strong>Rating:</strong> ${review.rating}</p>
@@ -72,8 +72,6 @@ fetch(url)
                 </article>`
         
     }
-
-    
 
 
   })

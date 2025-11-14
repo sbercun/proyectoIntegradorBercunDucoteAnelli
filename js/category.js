@@ -41,7 +41,7 @@ fetch(url)
 
 .then(function(data) {
 
-    for (let i = 0; i < 10;i++) {
+    for (let i = 0; i < data.products.length;i++) {
         let producto = data.products[i]
         productos_categoria.innerHTML += `
         <article class="producto">

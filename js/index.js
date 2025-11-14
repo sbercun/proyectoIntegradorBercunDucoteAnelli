@@ -37,10 +37,9 @@ fetch(('https://dummyjson.com/products/category/beauty'))
 
   .then(function(data) {
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < data.products.length; i++) {
         let producto = data.products[i]
-        if (producto){
-            beauty.innerHTML += `
+          beauty.innerHTML += `
                 <article class="producto">
                 <img src="${producto.thumbnail}" alt="${producto.title}">
                 <h3>${producto.title}</h3>
@@ -48,8 +47,6 @@ fetch(('https://dummyjson.com/products/category/beauty'))
                 <p class="precio" >$${producto.price}</p>
                 <a class="detalle" href="product.html?id=${producto.id}">Ver detalle</a>
                 </article>`
-                console.log("PRODUCTO")
-        }
     }
   })
   .catch(function(error) {
@@ -65,9 +62,8 @@ fetch(("https://dummyjson.com/products/category/fragrances"))
 
   .then(function(data) {
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < data.products.length; i++) {
         let producto = data.products[i]
-        if (producto){
             fragances.innerHTML += `
                 <article class="producto">
                 <img src="${producto.thumbnail}" alt="${producto.title}">
@@ -76,8 +72,6 @@ fetch(("https://dummyjson.com/products/category/fragrances"))
                 <p class="precio" >$${producto.price}</p>
                 <a class="detalle" href="product.html?id=${producto.id}">Ver detalle</a>
                 </article>`
-            console.log("FRAGANCIAS")
-        }
     }
   })
 
