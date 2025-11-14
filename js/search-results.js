@@ -29,14 +29,13 @@ fetch(('https://dummyjson.com/products/category-list'))
 let validacionBusqueda = document.querySelector(".buscador");
 let inputBusqueda = document.querySelector(".boton_buscar");
 
-validacionBusqueda.addEventListener('submit', function(event) {
-	event.preventDefault();  		                                //Detenemos el comportamiento default del formulario que es enviarse.
-	if ( inputBusqueda.value == "" ) {	                            //Chequeamos el contenido.
+validacionBusqueda.addEventListener('submit', function(event) {  //aca agarrato el formulario completo, pero dentro de este me quiero fijar que todo el tema de el if este basado en el input que ingrsa el usuario
+	event.preventDefault();  		                                
+	if ( inputBusqueda.value == "" ) {	                            
         alert("El campo esta vacio, completarlo")    	
     } else if(inputBusqueda.value.length < 3){
         alert("El campo esta incompleto, debe tener minimo 3 caracteres")
     } else{
-        this.submit()        		                                //Si no hay errores entonces enviamos el formulario con el método submit()
-
+        this.submit()        		                                
     }
 })
