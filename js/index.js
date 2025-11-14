@@ -46,7 +46,7 @@ fetch(('https://dummyjson.com/products/category/beauty'))
                 <h3>${producto.title}</h3>
                 <p>${producto.description}</p>
                 <p class="precio" >$${producto.price}</p>
-                <a class="detalle" href="product.html">Ver detalle</a>
+                <a class="detalle" href="product.html?id=${producto.id}">Ver detalle</a>
                 </article>`
                 console.log("PRODUCTO")
         }
@@ -74,7 +74,7 @@ fetch(("https://dummyjson.com/products/category/fragrances"))
                 <h3>${producto.title}</h3>
                 <p>${producto.description}</p>
                 <p class="precio" >$${producto.price}</p>
-                <a class="detalle" href="product.html">Ver detalle</a>
+                <a class="detalle" href="product.html?id=${producto.id}">Ver detalle</a>
                 </article>`
             console.log("FRAGANCIAS")
         }
