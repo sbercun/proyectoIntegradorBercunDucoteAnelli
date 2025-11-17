@@ -25,7 +25,7 @@ fetch(('https://dummyjson.com/products/category-list'))
 
 
 
-//RESULTADOS DE BUSQUEDA
+//BARRA DE BUSQUEDA
 let validacionBusqueda = document.querySelector(".buscador");
 let inputBusqueda = document.querySelector(".boton_buscar");
 
@@ -39,3 +39,24 @@ validacionBusqueda.addEventListener('submit', function(event) {  //aca agarrato 
         this.submit()        		                                
     }
 })
+
+
+
+//RESULTADOS DE BUSQUEDA
+  //Guardar la busqueda del usuario
+let busquedaUsuario = inputBusqueda.value;
+
+fetch ((`https://dummyjson.com/products/category/${busquedaUsuario}`)) //preguntar si la busqueda debe ser exacta o parcial
+  .then(function(busqueda){
+    return busqueda.json()
+  })
+
+  .then(function(data){
+    let titulo = document.querySelector('.contenedor_main.titulo');
+    let seccion = document.querySelector('seccion_best');
+    
+  })
+
+  .catch(function(error) {
+    console.log("Error: " + error)
+  })
