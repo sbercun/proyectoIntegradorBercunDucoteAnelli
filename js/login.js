@@ -12,8 +12,10 @@ formLogIn.addEventListener('submit', function(event) {  //aca agarrato el formul
         alert("La contraseña debe tener al menos 6 caracteres")   
     } else {
         this.submit()
-        let mail = document.querySelector("#mail");        		
-        localStorage.setItem("Email del usuario", mail)                              
+        let mail = document.querySelector("#mail")
+        let mailValue = mail.value
+        console.log((mailValue));       		
+        localStorage.setItem("Email del usuario", mailValue)                              
     }
 })
 
