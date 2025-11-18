@@ -8,9 +8,14 @@ formLogIn.addEventListener('submit', function(event) {  //aca agarrato el formul
 	event.preventDefault();  		                                
 	if ( inputMailContra.value == "" ) {	                            
         alert("El campo Email esta vacio, completarlo")    	
-    } else if (inputContra.value.length < 6 ){
+    } 
+    else if(inputContra.value === ""){
+        alert("El campo Contraseña esta vacio, completarlo")    	
+    }
+    else if (inputContra.value.length < 6 ){
         alert("La contraseña debe tener al menos 6 caracteres")   
-    } else {
+    } 
+    else {
         this.submit()
         let mail = document.querySelector("#mail")
         let mailValue = mail.value
