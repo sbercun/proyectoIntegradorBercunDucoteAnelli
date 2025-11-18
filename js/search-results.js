@@ -42,15 +42,16 @@ validacionBusqueda.addEventListener('submit', function(event) {  //aca agarrato 
 
 
 
-//RESULTADOS DE BUSQUEDA
-  //Guardar la busqueda del usuario
-let busqueda = location.search;
-let resultsBusqueda = new URLSearchParams(busqueda);
-let idBusqueda = resultsBusqueda.get('queBusco')
-
+//========================================RESULTADOS DE BUSQUEDA=======================================
+//Guardar la busqueda del usuario
+let busqueda = location.search; //agarra todo lo que esta despues del ?
+let resultsBusqueda = new URLSearchParams(busqueda); //define los metodos para trabajar con los parametros
+let idBusqueda = resultsBusqueda.get('queBusco') //busca el valor del parametro que se llama queBusco
 console.log(idBusqueda)
 
+// capturamos los contenedores de la sección
 let productosRela = document.querySelector('.seccion.best')
+
 
 fetch (`https://dummyjson.com/products/search?q=${idBusqueda}`)
   .then(function(busqueda){
@@ -58,25 +59,30 @@ fetch (`https://dummyjson.com/products/search?q=${idBusqueda}`)
   })
 
   .then(function(data){
-    //cambio el "Resultados para:..."
     let titulo = document.querySelector('.titulo');
-    console.log(titulo)
-    titulo.innerText = 'Resultados para: ' + idBusqueda 
+    
+    if(!idBusqueda || data.products.length === 0){
+       //cambio el "Resultados para:..." si NO existe esa categoria
+       titulo.innerText = 'No hay resultados para el término: ' + idBusqueda;
 
-    //modifico los productos que aparecen
-    for (let i = 0; i < data.products.length; i++) {
-      let productos = data.products[i]
-      productosRela.innerHTML += `
-              <article class="producto">
-              <img src="${productos.thumbnail}" alt="${productos.title}">
-              <h3>${productos.title}</h3>
-              <p>${productos.description}</p>
-              <p class="precio" >$${productos.price}</p>
-              <a class="detalle" href="product.html?id=${productos.id}">Ver detalle</a>
-              </article>`
+    }else{
+      //cambio el "Resultados para:..." si SI existe esa categoria
+      titulo.innerText = 'Resultados para: ' + idBusqueda; 
+
+      //modifico los productos que aparecen
+      for (let i = 0; i < data.products.length; i++) {
+        let productos = data.products[i]
+        productosRela.innerHTML += `
+                <article class="producto">
+                <img src="${productos.thumbnail}" alt="${productos.title}">
+                <h3>${productos.title}</h3>
+                <p>${productos.description}</p>
+                <p class="precio" >$${productos.price}</p>
+                <a class="detalle" href="product.html?id=${productos.id}">Ver detalle</a>
+                </article>`
+        }
     }
   })
-
   .catch(function(error) {
     console.log("Error: " + error)
   })
