@@ -46,6 +46,15 @@ header{
     border: 1px solid white;
     background-image: url('../imgs/lupa.png');
 }
+
+/* logout.js*/
+.bienvenido{
+    display: none;
+}
+#logout{
+    display: none;
+}
+
     /* login y register */
 .log_reg{
     order: 2;
