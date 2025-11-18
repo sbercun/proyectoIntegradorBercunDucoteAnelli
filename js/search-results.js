@@ -44,17 +44,37 @@ validacionBusqueda.addEventListener('submit', function(event) {  //aca agarrato 
 
 //RESULTADOS DE BUSQUEDA
   //Guardar la busqueda del usuario
-let busquedaUsuario = inputBusqueda.value;
+let busqueda = location.search;
+let resultsBusqueda = new URLSearchParams(busqueda);
+let idBusqueda = resultsBusqueda.get('queBusco')
 
-fetch ((`https://dummyjson.com/products/category/${busquedaUsuario}`)) //preguntar si la busqueda debe ser exacta o parcial
+console.log(idBusqueda)
+
+let productosRela = document.querySelector('.seccion.best')
+
+fetch (`https://dummyjson.com/products/search?q=${idBusqueda}`)
   .then(function(busqueda){
     return busqueda.json()
   })
 
   .then(function(data){
-    let titulo = document.querySelector('.contenedor_main.titulo');
-    let seccion = document.querySelector('seccion_best');
-    
+    //cambio el "Resultados para:..."
+    let titulo = document.querySelector('.titulo');
+    console.log(titulo)
+    titulo.innerText = 'Resultados para: ' + idBusqueda 
+
+    //modifico los productos que aparecen
+    for (let i = 0; i < data.products.length; i++) {
+      let productos = data.products[i]
+      productosRela.innerHTML += `
+              <article class="producto">
+              <img src="${productos.thumbnail}" alt="${productos.title}">
+              <h3>${productos.title}</h3>
+              <p>${productos.description}</p>
+              <p class="precio" >$${productos.price}</p>
+              <a class="detalle" href="product.html?id=${productos.id}">Ver detalle</a>
+              </article>`
+    }
   })
 
   .catch(function(error) {
