@@ -6,13 +6,13 @@ let logout = document.querySelector('#logout');
 let mailGuardado = localStorage.getItem("Email del usuario");
 
 if (mailGuardado){
-    bienvenido.textContent = "Bienvenido: " + mailGuardado;
+    bienvenido.innerHTML = '<span class="bienvenido-rosa">Bienvenido: </span>' + mailGuardado;
     bienvenido.style.display = "block";
 
     logout.style.display = "inline";
     linkLogin.style.display = "none";
     linkRegister.style.display = "none";
-    
+
 } else {
     bienvenido.textContent = "";
     bienvenido.style.display = "none";
