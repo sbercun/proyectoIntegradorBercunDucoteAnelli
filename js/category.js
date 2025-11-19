@@ -14,7 +14,6 @@ fetch(('https://dummyjson.com/products/category-list'))
                 <li class="category">
                 <a href="./category.html?category=${categoria}">${categoria}</a>
                 </li>`
-            console.log("CATEGORIAS");
         
     }
   })

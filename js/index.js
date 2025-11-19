@@ -10,13 +10,10 @@ fetch(('https://dummyjson.com/products/category-list'))
 
     for (let i = 0; i < data.length; i++) {
         let categoria = data[i];
-        if (categoria){
-            categorias.innerHTML += `
+         categorias.innerHTML += `
                 <li class="category">
                 <a href="./category.html?category=${categoria}">${categoria}</a>
                 </li>`
-            console.log("CATEGORIAS");
-        }
     }
   })
   .catch(function(error) {
